@@ -12028,6 +12028,40 @@
   arxivid       = "2304.13712"
 }
 
+@ARTICLE{Bertsch2023-mg,
+  title         = "Unlimiformer: {Long-Range} Transformers with Unlimited
+                   Length Input",
+  author        = "Bertsch, Amanda and Alon, Uri and Neubig, Graham and
+                   Gormley, Matthew R",
+  abstract      = "Transformer-based models typically have a predefined bound
+                   to their input length, because of their need to potentially
+                   attend to every token in the input. In this work, we propose
+                   Unlimiformer: a general approach that can wrap any existing
+                   pretrained encoder-decoder transformer, and offload the
+                   attention computation across all layers to a single
+                   $k$-nearest-neighbor index; this index can be kept on either
+                   the GPU or CPU memory and queried in sub-linear time. This
+                   way, we can index extremely long input sequences, while
+                   every attention head in every decoder layer retrieves its
+                   top-$k$ keys, instead of attending to every key. We
+                   demonstrate Unlimiformers's efficacy on several
+                   long-document and multi-document summarization benchmarks,
+                   showing that it can summarize even 350k token-long inputs
+                   from the BookSum dataset, without any input truncation at
+                   test time. Unlimiformer improves pretrained models such as
+                   BART and Longformer by extending them to unlimited inputs
+                   without additional learned weights and without modifying
+                   their code. We make our code and models publicly available
+                   at https://github.com/abertsch72/unlimiformer .",
+  month         =  may,
+  year          =  2023,
+  keywords      = "Models",
+  archivePrefix = "arXiv",
+  eprint        = "2305.01625",
+  primaryClass  = "cs.CL",
+  arxivid       = "2305.01625"
+}
+
 @ARTICLE{Shinn2023-gj,
   title         = "Reflexion: an autonomous agent with dynamic memory and
                    self-reflection",
