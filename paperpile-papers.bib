@@ -2926,6 +2926,34 @@
   keywords     = "LLMs"
 }
 
+@ARTICLE{Mu2023-sf,
+  title         = "Learning to compress prompts with gist tokens",
+  author        = "Mu, Jesse and Li, Xiang Lisa and Goodman, Noah",
+  abstract      = "Prompting is now the primary way to utilize the multitask
+                   capabilities of language models (LMs), but prompts occupy
+                   valuable space in the input context window, and re-encoding
+                   the same prompt is computationally inefficient. Finetuning
+                   and distillation methods allow for specialization of LMs
+                   without prompting, but require retraining the model for each
+                   task. To avoid this trade-off entirely, we present gisting,
+                   which trains an LM to compress prompts into smaller sets of
+                   ``gist'' tokens which can be reused for compute efficiency.
+                   Gist models can be easily trained as part of instruction
+                   finetuning via a restricted attention mask that encourages
+                   prompt compression. On decoder (LLaMA-7B) and
+                   encoder-decoder (FLAN-T5-XXL) LMs, gisting enables up to 26x
+                   compression of prompts, resulting in up to 40\% FLOPs
+                   reductions, 4.2\% wall time speedups, storage savings, and
+                   minimal loss in output quality.",
+  month         =  apr,
+  year          =  2023,
+  keywords      = "In-Context",
+  archivePrefix = "arXiv",
+  eprint        = "2304.08467",
+  primaryClass  = "cs.CL",
+  arxivid       = "2304.08467"
+}
+
 @ARTICLE{Hebenstreit2023-ek,
   title         = "An automatically discovered chain-of-thought prompt
                    generalizes to novel models and datasets",
